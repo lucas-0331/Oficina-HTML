@@ -1,6 +1,12 @@
-# Technical-Documentation
-Certification Project freeCodeCamp
+# Oficina HTML - 2024
 
-Objective: Build an app that is functionally similar to https://technical-documentation-page.freecodecamp.rocks
 
-![Alt text](img/project-image.png)
+A oficina tem como objetivo proporcionar aos participantes uma introdução abrangente aos conceitos fundamentais do HTML (Hypertext Markup Language). O HTML é a linguagem base para a criação e estruturação de páginas da web, e compreender seus princípios básicos é essencial para qualquer pessoa interessada em desenvolvimento web.
+
+![Tela principal da Oficina de HTML](img/project-image.png)
+
+---
+
+Curso: Ciência da Computação  
+Matéria: Tecnologias Web  
+Instrutores: Lara Avelino e Lucas Costa
