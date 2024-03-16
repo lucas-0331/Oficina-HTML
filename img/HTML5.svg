@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+* Based on a work by Dreftymac (<http://en.wikipedia.org/wiki/User:Dreftymac>)
+  (Image from the Dreftymac ImgNode Series. For more details, see:
+  <http://en.wikipedia.org/wiki/User:Dreftymac/Docs/ImageDisclaimer>.)
+* Updated 2009-04-12 by Anihl (<http://commons.wikimedia.org/wiki/User:Anihl>)
+* Updated 2009-11-07 by Ms2ger (<http://commons.wikimedia.org/wiki/User:Ms2ger>)
+  to show HTML5 markup.
+* The markup is adapted from <http://www.whatwg.org/html5/#the-title-element-0>.
+  (License: "You are granted a license to use, reproduce and create derivative
+  works of this document.".)
+* This file is licensed under Creative Commons Attribution-Share Alike 3.0
+  Unported (<http://creativecommons.org/licenses/by-sa/3.0/>).
+-->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+  <!ENTITY st0 "fill:url(#shadow_gradient);fill-opacity:0.2;">
+  <!ENTITY st1 "fill:url(#shadow_gradient);fill-opacity:0.2;">
+  <!ENTITY st2 "fill:url(#page_gradient);stroke:#222222;stroke-width:1;stroke-opacity:0.5;">
+  <!ENTITY st3 "fill:url(#page2_gradient);">
+  <!ENTITY st4 "font-family:'Bitstream Vera Sans Mono','Andale Mono',Consolas,monospace;font-size:18px;">
+  <!ENTITY st5 "fill:url(#fold_gradient);stroke:#999999;stroke-width:1;stroke-opacity:0.4;">
+  <!ENTITY st6 "fill:#FFCCAA;">
+  <!ENTITY st7 "fill:#803300;">
+  <!ENTITY st8 "fill:#FF6600;">
+  <!ENTITY st9 "font-family:'Bitstream Vera Sans',Verdana,sans-serif;font-weight:bold;font-size:20px;fill:#000000;">
+  <!ENTITY st10 "font-family:'Bitstream Vera Sans',Verdana,sans-serif;font-weight:bold;font-size:20px;fill:#FFFFFF;">
+]>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink" width="266" height="310"
+   viewBox="0 0 266 310" style="overflow:hidden;" xml:space="preserve">
+<desc>sample image of HTML code</desc>
+<defs>
+  <path id="page" d="M 0,0 0,288 254,288 254,70 190,0 z"/>
+  <linearGradient id="shadow_gradient" gradientUnits="userSpaceOnUse" x1="6" y1="6" x2="250" y2="288">
+    <stop offset="0.55" style="stop-color:#FFFFFF;"/>
+    <stop offset="1" style="stop-color:#000000;"/>
+  </linearGradient>
+  <linearGradient id="page_gradient" gradientUnits="userSpaceOnUse" x1="202" y1="1" x2="1" y2="202">
+    <stop offset="0" style="stop-color:#DADADA;"/>
+    <stop offset="0.35" style="stop-color:#F3F3F3;"/>
+  </linearGradient>
+  <linearGradient id="page2_gradient" gradientUnits="userSpaceOnUse" x1="1" y1="285" x2="101" y2="186">
+    <stop offset="0" style="stop-color:#F0F0F0"/>
+    <stop offset="1" style="stop-color:#F7F7F7"/>
+  </linearGradient>
+  <linearGradient id="fold_gradient" gradientUnits="userSpaceOnUse" x1="197" y1="65" x2="238" y2="31">
+    <stop offset="0" style="stop-color:#FFFFFF;"/>
+    <stop offset="1" style="stop-color:#DADADA;"/>
+  </linearGradient>
+</defs>
+<g id="background_box">
+  <use xlink:href="#page" x="11" y="11" style="&st0;"/>
+  <use xlink:href="#page" x="7" y="7" style="&st1;"/>
+  <use xlink:href="#page" x="2" y="2" style="&st2;"/>
+  <path id="page2" style="&st3;" d="M 4,20 4,276 252,276 252,220 c -5,2 -62,-79 -133,-76 C 50,144 69,30 3,20z"/>
+</g>
+<g id="text" transform="translate(15,43) scale(0.77,1)">
+  <text y="0" style="&st4;">&lt;!DOCTYPE html></text>
+  <text y="22" style="&st4;">&lt;html lang=en&gt;</text>
+  <text y="44" style="&st4;">&lt;meta charset=UTF-8&gt;</text>
+  <text y="66" style="&st4;">&lt;title&gt;Introduction to</text>
+  <text y="88" style="&st4;"> The Mating Rituals of</text>
+  <text y="110" style="&st4;"> Bees&lt;/title&gt;</text>
+  <text y="132" style="&st4;">&lt;h1&gt;Introduction&lt;/h1&gt;</text>
+  <text y="154" style="&st4;">&lt;p&gt;This companion guide to</text>
+  <text y="176" style="&st4;"> the highly successful</text>
+  <text y="198" style="&st4;"> &lt;cite&gt;Introduction to</text>
+  <text y="220" style="&st4;"> Medieval Beekeeping&lt;/cite&gt;…</text>
+</g>
+<path id="fold" style="&st5;" d="M 191,1 C 202,22 197,55 197,65 C 213,64 238,62 256,72 z"/>
+<g id="HTML" transform="translate(175,272)">
+  <path style="&st6;" d="M 0,0 90,0 88,2 2,2 2,38 0,38 0,0 z"/>
+  <path style="&st7;" d="M 90,0 90,38 0,38 2,36 88,36 88,2 90,0 z"/>
+  <rect style="&st8;" x="2" y="2" width="86" height="34"/>
+  <g>
+    <text style="&st9;" transform="translate(14,28)">HTML</text>
+    <text style="&st10;" transform="translate(12,26)">HTML</text>
+  </g>
+</g>
+</svg>
