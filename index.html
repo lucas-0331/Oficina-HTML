@@ -30,6 +30,9 @@
                 <a class="nav-link" href="#Struct">Estrutura</a>
             </li>
             <li>
+                <a class="nav-link" href="#Structs_Tags">Tags Estruturais</a>
+            </li>
+            <li>
                 <a class="nav-link" href="#Reference">Referências</a>
             </li>
         </ul>
@@ -246,7 +249,7 @@
                     &nbsp;&nbsp;&nbsp;&nbsp;&lt;meta charset="utf-8" &#47;&gt;<br>
                     &lt;&#47;head&gt;<br>
                     &lt;body&gt;<br>
-                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">&lt;&#33;&#45;&#45;&nbsp;Conteúdo da Página&nbsp;&#45;&#45;&gt;</span><br>
                     &lt;&#47;body&gt;<br>
                 </code>
                 <button class="copy-button">
@@ -264,7 +267,7 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>&lt;!DOCKTYPE html&gt;</td>
+                            <td>&lt;&#33;DOCKTYPE html&gt;</td>
                             <td>Define que é a versão HTML5 para o navegador.</td>
                         </tr>
                         <tr>
@@ -285,6 +288,87 @@
                         </tr>
                         <tr>
                             <td>&lt;body&gt; &lt;&#47;body&gt;</td>
+                            <td>Contém o conteúdo visível da página.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <section class="main-section" id="Structs_Tags">
+            <header>
+                Tags Estruturais
+            </header>
+            <div class="code-container">
+                <code class="copyable-code">
+                    &lt;&#33;DOCTYPE html&gt;<br>
+                    &lt;html&gt;<br>
+                    &lt;head&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Título da Página<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;meta charset="utf-8" &#47;&gt;<br>
+                    &lt;&#47;head&gt;<br>
+                    &lt;body&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;header&gt;&nbsp;<span class="comment">&lt;&#33;&#45;&#45;&nbsp;Seu cabeçalho aqui&nbsp;&#45;&#45;&gt;</span><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;nav&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">&lt;&#33;&#45;&#45;&nbsp;Sua navegação aqui&nbsp;&#45;&#45;&gt;</span><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#47;nav&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;&#47;header&gt;<br>
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;main&gt;&nbsp;<span class="comment">&lt;&#33;&#45;&#45;&nbsp;Seu conteúdo principal aqui&nbsp;&#45;&#45;&gt;</span><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;session&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">&lt;&#33;&#45;&#45;&nbsp;Sua sessão aqui&nbsp;&#45;&#45;&gt;</span><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#47;session&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;session&gt;&nbsp;<span class="comment">&lt;&#33;&#45;&#45;&nbsp;Sua sessão aqui&nbsp;&#45;&#45;&gt;</span><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">&lt;&#33;&#45;&#45;&nbsp;Div não tem um significado semântico específico&nbsp;&#45;&#45;&gt;</span><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#47;div&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#47;session&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;&#47;main&gt;<br>
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;dromedario&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">&lt;&#33;&#45;&#45;&nbsp;Tag impostora&nbsp;&#45;&#45;&gt;</span><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;&#47;dromedario&gt;<br>
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;footer&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">&lt;&#33;&#45;&#45;&nbsp;Seu rodapé aqui&nbsp;&#45;&#45;&gt;</span><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;&#47;footer&gt;<br>
+                    &lt;&#47;body&gt;<br>
+                </code>
+                <button class="copy-button">
+                    <img src="img/icons8-copy-48.png" alt="Icone Copiar" class="button-icon">
+                    <span>Copiar Código</span>
+                </button>
+            </div>
+            <div class="table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th scope="col">Tags</th>
+                            <th scope="col">Descrição</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>&lt;header&gt; &lt;&#47;header&gt;</td>
+                            <td>Define que é a versão HTML5 para o navegador.</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;main&gt; &lt;&#47;main&gt;</td>
+                            <td>Define o início e o fim do documento HTML.</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;section&gt; &lt;&#47;section&gt;</td>
+                            <td>Contém metadados e informações do documento.</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;footer&gt; &lt;&#47;footer&gt;</td>
+                            <td>Define o título da página.</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;nav&gt; &lt;&#47;nav&gt;</td>
+                            <td>Define o título da página.</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;div&gt; &lt;&#47;div&gt;</td>
                             <td>Contém o conteúdo visível da página.</td>
                         </tr>
                     </tbody>

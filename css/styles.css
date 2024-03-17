@@ -154,6 +154,10 @@ footer {
     vertical-align: middle;
 }
 
+.comment {
+    color: #557dad;
+}
+
 @media only screen and (max-width: 815px) {
 
     #navbar ul {
