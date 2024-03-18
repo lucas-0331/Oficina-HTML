@@ -33,24 +33,42 @@
                 <a class="nav-link" href="#Structs_Tags">Tags Estruturais</a>
             </li>
             <li>
+                <a class="nav-link" href="#Title">Tags de Título</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Text">Tags de Texto</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Table">Tags de Tabela</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#List">Tags de Lista</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Attribute">Atributos</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Multimedia">Tags Mulimídia
+            </li>
+            <li>
                 <a class="nav-link" href="#Reference">Referências</a>
             </li>
         </ul>
     </nav>
     <main id="main-doc">
         <section class="main-section" id="добро_пожаловать">
-            <header>
+            <div class="header">
                 &lt;h1&gt;Hello, World!&lt;h1&gt;
                 <p class="there_are_no_easter_eggs_up_here_go_away">Привет, мир!</p>
-            </header>
+            </div>
             <p>
                 Nós oferecemos esta oficina de tecnologia web, focada nos temas de HTML, CSS e no framework de estilização Tailwind CSS. Nosso objetivo é fornecer os conceitos básicos, os quais consideramos fundamentais no âmbito da educação e do desenvolvimento pessoal. Acreditamos que, com esses conceitos fundamentais assimilados, vocês serão capazes de traçar seus próprios destinos e seguir o caminho que considerarem mais significativo.
             </p>
         </section>
         <section class="main-section" id="Language_Markdown">
-            <header>
+            <div class="header">
                 Linguagem de Marcação
-            </header>
+            </div>
             <p>
                 Uma Linguagem de Marcação é um conjunto de sinais e códigos aplicados a um texto ou a dados para definir formatos, maneiras de exibição e padrões.
             </p>
@@ -100,9 +118,9 @@
             </p>
         </section>
         <section class="main-section" id="Evolution">
-            <header>
+            <div class="header">
                 Evolução do HTML
-            </header>
+            </div>
             <p>
                 Uma breve jornada na evolução do HTML:
             </p>
@@ -173,9 +191,9 @@
             </div>
         </section>
         <section class="main-section" id="Tim_Benners-Lee">
-            <header>
+            <div class="header">
                 Tim Benners-Lee
-            </header>
+            </div>
             <p>
                 Página pessoal do <a href="https://www.w3.org/People/Berners-Lee/" class="mdn" target="_blank">Sir Timonthy Berners-Lee</a>.
             </p>
@@ -237,9 +255,9 @@
             </ul>
         </section>
         <section class="main-section" id="Struct">
-            <header>
+            <div class="header">
                 Estrutura
-            </header>
+            </div>
             <div class="code-container">
                 <code class="copyable-code">
                     &lt;&#33;DOCTYPE html&gt;<br>
@@ -251,6 +269,7 @@
                     &lt;body&gt;<br>
                     &nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">&lt;&#33;&#45;&#45;&nbsp;Conteúdo da Página&nbsp;&#45;&#45;&gt;</span><br>
                     &lt;&#47;body&gt;<br>
+                    &lt;&#47;html&gt;<br>
                 </code>
                 <button class="copy-button">
                     <img src="img/icons8-copy-48.png" alt="Icone Copiar" class="button-icon">
@@ -271,15 +290,15 @@
                             <td>Define que é a versão HTML5 para o navegador.</td>
                         </tr>
                         <tr>
-                            <td>&lt;html&gt; &lt;&#47;html&gt;</td>
+                            <td>&lt;html&gt;<br>&lt;&#47;html&gt;</td>
                             <td>Define o início e o fim do documento HTML.</td>
                         </tr>
                         <tr>
-                            <td>&lt;head&gt; &lt;&#47;head&gt;</td>
+                            <td>&lt;head&gt;<br>&lt;&#47;head&gt;</td>
                             <td>Contém metadados e informações do documento.</td>
                         </tr>
                         <tr>
-                            <td>&lt;title&gt; &lt;&#47;title&gt;</td>
+                            <td>&lt;title&gt;<br>&lt;&#47;title&gt;</td>
                             <td>Define o título da página.</td>
                         </tr>
                         <tr>
@@ -287,7 +306,7 @@
                             <td>Fornece metadados sobre o documento HTML.</td>
                         </tr>
                         <tr>
-                            <td>&lt;body&gt; &lt;&#47;body&gt;</td>
+                            <td>&lt;body&gt;<br>&lt;&#47;body&gt;</td>
                             <td>Contém o conteúdo visível da página.</td>
                         </tr>
                     </tbody>
@@ -295,9 +314,9 @@
             </div>
         </section>
         <section class="main-section" id="Structs_Tags">
-            <header>
+            <div class="header">
                 Tags Estruturais
-            </header>
+            </div>
             <div class="code-container">
                 <code class="copyable-code">
                     &lt;&#33;DOCTYPE html&gt;<br>
@@ -332,6 +351,7 @@
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">&lt;&#33;&#45;&#45;&nbsp;Seu rodapé aqui&nbsp;&#45;&#45;&gt;</span><br>
                     &nbsp;&nbsp;&nbsp;&nbsp;&lt;&#47;footer&gt;<br>
                     &lt;&#47;body&gt;<br>
+                    &lt;&#47;html&gt;<br>
                 </code>
                 <button class="copy-button">
                     <img src="img/icons8-copy-48.png" alt="Icone Copiar" class="button-icon">
@@ -348,43 +368,444 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>&lt;header&gt; &lt;&#47;header&gt;</td>
-                            <td>Define que é a versão HTML5 para o navegador.</td>
+                            <td>&lt;header&gt;<br>&lt;&#47;header&gt;</td>
+                            <td>Define para o navegador que é um cabeçalho.</td>
                         </tr>
                         <tr>
-                            <td>&lt;main&gt; &lt;&#47;main&gt;</td>
-                            <td>Define o início e o fim do documento HTML.</td>
+                            <td>&lt;main&gt;<br>&lt;&#47;main&gt;</td>
+                            <td>Define para o navegador que é o conteúdo principal.</td>
                         </tr>
                         <tr>
-                            <td>&lt;section&gt; &lt;&#47;section&gt;</td>
-                            <td>Contém metadados e informações do documento.</td>
+                            <td>&lt;section&gt;<br>&lt;&#47;section&gt;</td>
+                            <td>Define para o navegador que é uma sessão na página.</td>
                         </tr>
                         <tr>
-                            <td>&lt;footer&gt; &lt;&#47;footer&gt;</td>
-                            <td>Define o título da página.</td>
+                            <td>&lt;footer&gt;<br>&lt;&#47;footer&gt;</td>
+                            <td>Define para o navegador que é o rodapé da página.</td>
                         </tr>
                         <tr>
-                            <td>&lt;nav&gt; &lt;&#47;nav&gt;</td>
-                            <td>Define o título da página.</td>
+                            <td>&lt;nav&gt;<br>&lt;&#47;nav&gt;</td>
+                            <td>Define para o navegador que é uma navegação de página.</td>
                         </tr>
                         <tr>
-                            <td>&lt;div&gt; &lt;&#47;div&gt;</td>
-                            <td>Contém o conteúdo visível da página.</td>
+                            <td>&lt;div&gt;<br>&lt;&#47;div&gt;</td>
+                            <td>Define uma divisão da página, não possui valor semântico.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <section class="main-section" id="Title">
+            <div class="header">
+                Tags de Título
+            </div>
+            <p>
+                As tags de título possuem valor semântico, variando entre seis níveis hierárquicos. Esses níveis hierárquicos são para <a href="https://developers.google.com/search/docs/fundamentals/seo-starter-guide?hl=pt-br" class="mdn" target="_blank"><b>fins de otimização do SEO</b></a> e isso é muito importante, então busque fazer a utilização semântica adequada.
+            </p>
+            <p>
+                Os títulos vão do seu maior nível hierárquico que é &lt;h1&gt; até a de menor valor hierárquico &lt;h6&gt;.
+            </p>
+            <div class="table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th scope="col">Tags</th>
+                            <th scope="col">Descrição</th>
+                            <th scope="col">Exemplo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>&lt;h1&gt;Título&lt;&#47;h1&gt;</td>
+                            <td>Título de nível 1</td>
+                            <td><h1>Título</h1></td>
+                        </tr>
+                        <tr>
+                            <td>&lt;h2&gt;Título&lt;&#47;h2&gt;</td>
+                            <td>Título de nível 2</td>
+                            <td><h2>Título</h2></td>
+                        </tr>
+                        <tr>
+                            <td>&lt;h3&gt;Título&lt;&#47;h3&gt;</td>
+                            <td>Título de nível 3</td>
+                            <td><h3>Título</h3></td>
+                        </tr>
+                        <tr>
+                            <td>&lt;h4&gt;Título&lt;&#47;h4&gt;</td>
+                            <td>Título de nível 4</td>
+                            <td><h4>Título</h4></td>
+                        </tr>
+                        <tr>
+                            <td>&lt;h5&gt;Título&lt;&#47;h5&gt;</td>
+                            <td>Título de nível 5</td>
+                            <td><h5>Título</h5></td>
+                        </tr>
+                        <tr>
+                            <td>&lt;h6&gt;Título&lt;&#47;h6&gt;</td>
+                            <td>Título de nível 6</td>
+                            <td><h6>Título</h6></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <section class="main-section" id="Text">
+            <div class="header">
+                Tags de Texto
+            </div>
+            <p>
+                As tags de texto definem a marcações de texto, estilos de fonte, parágrafos, spans, quebras de linhas entre outras, não se limitam apenas a essas tags apresentadas.
+            </p>
+            <div class="table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th scope="col">Tags</th>
+                            <th scope="col">Descrição</th>
+                            <th scope="col">Exemplo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>&lt;p&gt;Texto&lt;&#47;p&gt;</td>
+                            <td>Define um parágrafo</td>
+                            <td><p class="default">Texto</p></td>
+                        </tr>
+                        <tr>
+                            <td>&lt;span&gt;Texto&lt;&#47;span&gt;</td>
+                            <td>Tem a funcionalidade parecida de parágrafo</td>
+                            <td><span>Texto</span></td>
+                        </tr>
+                        <tr>
+                            <td>&lt;pre&gt;Texto&lt;&#47;pre&gt;</td>
+                            <td>Pré-formata um texto.</td>
+                            <td><pre>Texto</pre></td>
+                        </tr>
+                        <tr>
+                            <td>&lt;b&gt;Texto&lt;&#47;b&gt;</td>
+                            <td>Transforma o texto em negrito</td>
+                            <td><b>Texto</b></td>
+                        </tr>
+                        <tr>
+                            <td>&lt;i&gt;Texto&lt;&#47;i&gt;</td>
+                            <td>Transforma o texto em itálico</td>
+                            <td><i>Texto</i></td>
+                        </tr>
+                        <tr>
+                            <td>Tex&lt;br &#47;&gt;to</td>
+                            <td>Quebra de linha</td>
+                            <td>Tex<br />to</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;hr &#47;&gt;</td>
+                            <td>Forma uma linha horizontal</td>
+                            <td><hr></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <section class="main-section" id="Table">
+            <div class="header">
+                Tags de Tabela
+            </div>
+            <p>
+                As tags de tabela desempenham um papel fundamental na organização e estruturação do conteúdo em páginas em web, oferenco um meio eficaz de apresentar informaçoes de maneira clara e organizada.
+            </p>
+            <div class="code-container">
+                <code class="copyable-code">
+                    &lt;table border="1"&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;thead&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt; Horário &lt;&#47;th&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt; Segunda &lt;&#47;th&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt; Terça &lt;&#47;th&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt; Quarta &lt;&#47;th&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt; Quinta &lt;&#47;th&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt; Sexta &lt;&#47;th&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#47;tr&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;&#47;thead&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;tbody&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt; 19:00 &lt;&#47;td&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt; Banco de Dados II &lt;&#47;td&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt; Eng. Software II &lt;&#47;td&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt; Redes de Computadores I &lt;&#47;td&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt; Tecnologias Web I &lt;&#47;td&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt; Projeto e Analise de Alg. &lt;&#47;td&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#47;tr&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt; 19:55 &lt;&#47;td&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt; Banco de Dados II &lt;&#47;td&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt; Eng. Software II &lt;&#47;td&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt; Redes de Computadores I &lt;&#47;td&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt; Tecnologias Web I &lt;&#47;td&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt; Projeto e Analise de Alg. &lt;&#47;td&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#47;tr&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt; 20:50 &lt;&#47;td&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt; ---- &lt;&#47;td&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt; ---- &lt;&#47;td&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt; ---- &lt;&#47;td&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt; ---- &lt;&#47;td&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt; ---- &lt;&#47;td&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#47;tr&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt; 21:10 &lt;&#47;td&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt; Banco de Dados II &lt;&#47;td&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt; Eng. Software II &lt;&#47;td&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt; Tecnologias Web I &lt;&#47;td&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt; Redes de Computadores I &lt;&#47;td&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt; Projeto e Analise de Alg. &lt;&#47;td&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#47;tr&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt; 22:05 &lt;&#47;td&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt; Banco de Dados II &lt;&#47;td&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt; Eng. Software II &lt;&#47;td&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt; Tecnologias Web I &lt;&#47;td&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt; ---- &lt;&#47;td&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt; ---- &lt;&#47;td&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#47;tr&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;&#47;tbody&gt;<br>
+                    &lt;&#47;table&gt;<br>
+                </code>
+                <button class="copy-button">
+                    <img src="img/icons8-copy-48.png" alt="Icone Copiar" class="button-icon">
+                    <span>Copiar Código</span>
+                </button>
+            </div>
+            <div class="table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th scope="col">Tags</th>
+                            <th scope="col">Descrição</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>&lt;table&gt;<br>&lt;&#47;table&gt;</td>
+                            <td>Define uma tabela em HTML para organizar dados em linhas e colunas</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;thead&gt;<br>&lt;&#47;thead&gt;</td>
+                            <td>Define o cabeçalho de uma tabela, geralmente contendo títulos de colunas</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;tbody&gt;<br>&lt;&#47;tbody&gt;</td>
+                            <td>Define o corpo principal de uma tabela, onde os dados são inseridos</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;tfoot&gt;<br>&lt;&#47;tfoot&gt;</td>
+                            <td>Define o rodapé de uma tabela, geralmente contendo totais ou informações adicionais</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;tr&gt;<br>&lt;&#47;tr&gt;</td>
+                            <td>Define uma linha em uma tabela</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;th&gt;<br>&lt;&#47;th&gt;</td>
+                            <td>Define um cabeçalho de célula em uma tabela</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;td&gt;<br>&lt;&#47;td&gt;</td>
+                            <td>Define uma célula de dados em uma tabela</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <section class="main-section" id="List">
+            <div class="header">
+                Lista
+            </div>
+            <div class="code-container">
+                <code class="copyable-code">
+                    <span class="comment">&lt;&#33;&#45;&#45;&nbsp;Lista Ordenada&nbsp;&#45;&#45;&gt;</span><br>
+                    &lt;ol&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt; item 1 &lt;&#47;li&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt; item 2 &lt;&#47;li&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt; item 3 &lt;&#47;li&gt;<br>
+                    &lt;&#47;ol&gt;<br>
+                    <br>
+                    <span class="comment">&lt;&#33;&#45;&#45;&nbsp;Lista Não Ordenada&nbsp;&#45;&#45;&gt;</span><br>
+                    &lt;ul&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt; item 1 &lt;&#47;li&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt; item 2 &lt;&#47;li&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt; item 3 &lt;&#47;li&gt;<br>
+                    &lt;&#47;ul&gt;<br>
+                </code>
+                <button class="copy-button">
+                    <img src="img/icons8-copy-48.png" alt="Icone Copiar" class="button-icon">
+                    <span>Copiar Código</span>
+                </button>
+            </div>
+            <div class="table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th scope="col">Tags</th>
+                            <th scope="col">Descrição</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>&lt;ol&gt;<br>&lt;&#47;ol&gt;</td>
+                            <td>Define uma lista ordenada, onde os itens são enumerados</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;ul&gt;<br>&lt;&#47;ul&gt;</td>
+                            <td>Define uma lista não ordenada, onde os itens não são enumerados</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;li&gt;<br>&lt;&#47;li&gt;</td>
+                            <td>Define um item em uma lista, seja ordenada ou não ordenada</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <section class="main-section" id="Attribute">
+            <div class="header">
+                Atributos
+            </div>
+            <p>
+                Os atributos são usados para personalizar as tags, modificando sua estrutura ou funcionalidade.
+            </p>
+            <p>
+                A maioria das tags em seus proṕrios atributos. Contudo, existem alguns atributos genéricos que podem ser utilizados na maioria das tags HTML.
+            </p>
+            <div class="table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th scope="col">Tags</th>
+                            <th scope="col">Descrição</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>class="..."</td>
+                            <td>Atribui uma classe ao elemento (uma classe pode ser utilizada para um ou mais elementos)</td>
+                        </tr>
+                        <tr>
+                            <td>id="..."</td>
+                            <td>Atribui um id ao elemento (um id deve ser único, ou seja atribuído a um único elemento)</td>
+                        </tr>
+                        <tr>
+                            <td>style="..."</td>
+                            <td>Permite incluir elementos CSS (estilos) dentro da tag</td>
+                        </tr>
+                        <tr>
+                            <td>lang="..."</td>
+                            <td>Define o idioma principal do elemento</td>
+                        </tr>
+                        <tr>
+                            <td>title="..."</td>
+                            <td>Define o título do elemento</td>
+                        </tr>
+                        <tr>
+                            <td>alt="..."</td>
+                            <td>Define um texto alternativo e, por isso, é muito utilizado em imagens, auxilia nas práticas de SEO</td>
+                        </tr>
+                        <tr>
+                            <td>hidden</td>
+                            <td>Oculta o elemento</td>
+                        </tr>
+                        <tr>
+                            <td>align="..."</td>
+                            <td>Permite definir o padrão de alinhamento desse elemento, como por exemplo: right, center, left e justify;</td>
+                        </tr>
+                        <tr>
+                            <td>width="..."</td>
+                            <td>Define uma largura para o elemento</td>
+                        </tr>
+                        <tr>
+                            <td>heigth="..."</td>
+                            <td>Define uma altura para o elemento</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <section class="main-section" id="Multimedia">
+            <div class="header">
+                Tags de Multimídia
+            </div>
+            <div class="code-container">
+                <code class="copyable-code">
+                    <span class="comment">&lt;&#33;&#45;&#45;&nbsp;Vídeo&nbsp;&#45;&#45;&gt;</span><br>
+                    &lt;video controls&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;source src="video.mp4" type="video/mp4"&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;source src="video.ogg" type="video/ogg"&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">&lt;&#33;&#45;&#45;&nbsp;Seu navegador não possui suporte para vídeo&nbsp;&#45;&#45;&gt</span> <br>
+                    &lt;&#47;video&gt;<br>
+                    <br>
+                    <span class="comment">&lt;&#33;&#45;&#45;&nbsp;Audio&nbsp;&#45;&#45;&gt;</span><br>
+                    &lt;audio constrol&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;source src="musica.mp3" type="audio/mpeg"&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;source src="musica.ogg" type="audio/ogg"&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">&lt;&#33;&#45;&#45;&nbsp;Seu navegador não possui suporte para áudio&nbsp;&#45;&#45;&gt</span><br>
+                    &lt;&#47;audio&gt;<br>
+                    <br>
+                    <span class="comment">&lt;&#33;&#45;&#45;&nbsp;iFrame&nbsp;&#45;&#45;&gt;</span><br>
+                    &lt;iframe src="https://wwww.google.com.br"&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">&lt;&#33;&#45;&#45;&nbsp;Seu navegador não possui suporte para iframe&nbsp;&#45;&#45;&gt</span><br>
+                    &lt;&#47;iframe&gt;<br>
+                </code>
+                <button class="copy-button">
+                    <img src="img/icons8-copy-48.png" alt="Icone Copiar" class="button-icon">
+                    <span>Copiar Código</span>
+                </button>
+            </div>
+            <div class="table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th scope="col">Tags</th>
+                            <th scope="col">Descrição</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>&lt;img&gt;</td>
+                            <td>Essa tag serve para incluir imagem ao texto, utilizando o atributo src="" onde deve ser digitado o local em que a imagem será encontrada</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;video&gt;</td>
+                            <td>Essa tag serve para incluir video ao texto, e deve colocar a tag &lt;source&gt; com os atributos <b>src</b> e <b>type</b></td>
+                        </tr>
+                        <tr>
+                            <td>&lt;audio&gt;</td>
+                            <td>Permite incluir elementos CSS (estilos) dentro da tag</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;iframe&gt;</td>
+                            <td>Define o idioma principal do elemento</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
         </section>
         <section class="main-section" id="Reference">
-            <header>
+            <div class="header">
                 Referências
-            </header>
-            <code>
-                WIWIWIWI
-            </code>
+            </div>
             <ul>
                 <li>
-                    Todas referências de tags foram retiradas de <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" class="mdn" >MDN</a>
+                    Todas referências de tags foram retiradas de <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" class="mdn" target="_blank">MDN</a>.
+                </li>
+                <li>
+                    Informações históricas e curiosidades retiradas de <a href="https://www.w3.org/" class="mdn" target="_blank">W3C</a>.
+                </li>
+                <li>
+                    Referências do funcionamento e aprendizado sobre tags retiradas de <a href="https://www.w3schools.com/" class="mdn" target="_blank">W3Schools</a>.
+                </li>
+                <li>
+                    Informações sobre tags de estrutura e tags estruturais retiradas de <a href="https://www.homehost.com.br/blog/tutoriais/tags-html/" class="mdn" target="_blank">HomeHost</a>.
+                </li>
+                <li>
+                    Tabela de códigos especiais utilizadas no html para estruturar os códigos em tela retiradas de <a href="https://www.dm.ufscar.br/profs/waldeck/curso/html/apend/tabcod.html" class="mdn" target="_blank">UFSCar</a>.
                 </li>
             </ul>
         </section>
@@ -396,31 +817,3 @@
     </main>
 </body>
 </html>
-
-
-<!-- 
-    <tr>
-                            <td>&lt;header&gt; &lt;&#47;header&gt;</td>
-                            <td>Define o cabeçalho da página.</td>
-                        </tr>
-                        <tr>
-                            <td>&lt;nav&gt; &lt;&#47;nav&gt;</td>
-                            <td>Define o menu de navegação da página.</td>
-                        </tr>
-                        <tr>
-                            <td>&lt;main&gt; &lt;&#47;main&gt;</td>
-                            <td>Define o conteúdo principal da página.</td>
-                        </tr>
-                        <tr>
-                            <td>&lt;section&gt; &lt;&#47;section&gt;</td>
-                            <td>Define uma seção dentro do documento.</td>
-                        </tr>
-                        <tr>
-                            <td>&lt;article&gt; &lt;&#47;article&gt;</td>
-                            <td>Define um artigo dentro do documento.</td>
-                        </tr>
-                        <tr>
-                            <td>&lt;footer&gt; &lt;&#47;footer&gt;</td>
-                            <td>Define o rodapé da página.</td>
-                        </tr>
- -->

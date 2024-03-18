@@ -24,7 +24,7 @@ body {
     padding: 25px
 }
 
-header {
+.header {
     font-size: 30px;
     color: #000;
 }
@@ -156,6 +156,10 @@ footer {
 
 .comment {
     color: #557dad;
+}
+
+.default {
+    padding: initial;
 }
 
 @media only screen and (max-width: 815px) {
