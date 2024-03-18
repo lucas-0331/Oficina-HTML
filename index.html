@@ -48,7 +48,13 @@
                 <a class="nav-link" href="#Attribute">Atributos</a>
             </li>
             <li>
-                <a class="nav-link" href="#Multimedia">Tags Mulimídia
+                <a class="nav-link" href="#Multimedia">Tags de Mulimídia
+            </li>
+            <li>
+                <a class="nav-link" href="#Forms">Tags de Formulário
+            </li>
+            <li>
+                <a class="nav-link" href="#Docs">Documentação
             </li>
             <li>
                 <a class="nav-link" href="#Reference">Referências</a>
@@ -773,11 +779,11 @@
                         </tr>
                         <tr>
                             <td>&lt;video&gt;</td>
-                            <td>Essa tag serve para incluir video ao texto, e deve colocar a tag &lt;source&gt; com os atributos <b>src</b> e <b>type</b></td>
+                            <td>Essa tag serve para incluir video a página, e deve colocar a tag <b>&lt;source&gt;</b> com os atributos <b>src</b> e <b>type</b></td>
                         </tr>
                         <tr>
                             <td>&lt;audio&gt;</td>
-                            <td>Permite incluir elementos CSS (estilos) dentro da tag</td>
+                            <td>Essa tag serve para incluir áudio a página, e deve colocar a tag <b>&lt;source&gt;</b> com os atributos <b>src</b> e <b>type</b>g</td>
                         </tr>
                         <tr>
                             <td>&lt;iframe&gt;</td>
@@ -786,6 +792,146 @@
                     </tbody>
                 </table>
             </div>
+        </section>
+        <section class="main-section" id="Forms">
+            <div class="header">
+                Tags de Formulário
+            </div>
+            <div class="table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th scope="col">Tags</th>
+                            <th scope="col">Descrição</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>&lt;form&gt;<br>&lt;&#47;form&gt;</td>
+                            <td>
+                                Essa tag serve para definir um formulário na sua página
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>&lt;textarea&gt;<br>&lt;&#47;textarea&gt;</td>
+                            <td>
+                                Informa que terá uma área para texto dentro do seu formulário
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>&lt;input &#47;&gt;</td>
+                            <td>É utilizada para entrada de dados, porém deve ser acompanhada pelo <b>type</b></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p>
+                A tag input possui vários atributos que server para auxiliar o input, um dos atributos que é bastante utilizado é o <b>placeholder="..."</b>que escreve dentro do campo input, uma mensagem que for definida.
+            </p>
+            <p>
+                É utilizado o <b>type="..."</b> para definir o tipo de entrada que vai ser inserido naquele campo, auxiliando na validação de dados, pois se for definido que o <b>type="email"</b> o que é esperado de entrada nesse campo é um email, já possuindo algumas validações do próprio HTML.
+            </p>
+            <p>
+                <b>Type</b>
+            </p>
+            <div class="table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th scope="col">Tipos</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>&lt;input type="button" &#47;&gt;</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;input type="checkbox" &#47;&gt;</td>
+
+                        </tr>
+                        <tr>
+                            <td>&lt;input type="color" &#47;&gt;</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;input type="date" &#47;&gt;</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;input type="datetime-local" &#47;&gt;</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;input type="email" &#47;&gt;</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;input type="file" &#47;&gt;</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;input type="hidden" &#47;&gt;</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;input type="image" &#47;&gt;</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;input type="month" &#47;&gt;</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;input type="number" &#47;&gt;</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;input type="password" &#47;&gt;</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;input type="radio" &#47;&gt;</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;input type="range" &#47;&gt;</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;input type="reset" &#47;&gt;</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;input type="search" &#47;&gt;</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;input type="submit" &#47;&gt;</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;input type="tel" &#47;&gt;</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;input type="text" &#47;&gt;</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;input type="time" &#47;&gt;</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;input type="url" &#47;&gt;</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;input type="week" &#47;&gt;</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p>
+                Para consultar os atributos e quais navegadores suportam os tipos acesse <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/input" class="mdn" target="_blank">MDN - Input</a>.
+            </p>
+        </section>
+        <section class="main-section" id="Docs">
+            <div class="header">
+                Documentação
+            </div>
+            <p>
+                Existem diversas outras tags, além das apresentadas no material. No entanto, não abordamos todas devido ao limite de tempo e à quantidade excessiva de informação que isso acarretaria. Por isso, vamos deixar a documentação da Mozilla para pesquisas sobre outras tags e para entender mais sobre as tags que foram apresentadas.
+            </p>
+            <p>
+                A documentação está parcialmente em português, mas nem tudo o que precisamos estará disponível em traduções para o português. As documentações costumam estar completas apenas em inglês. Por isso, deixaremos as duas versões e recomendamos que você consulte a versão em inglês e utilize o Google Tradutor caso tenha dificuldades na interpretação de determinada tag.
+            </p>
+            <p>
+                Documentação da Mozilla em <b>PORTUGUÊS</b> <a href="https://developer.mozilla.org/pt-BR/" class="mdn" target="_blank">MDN</a>.
+            </p>
+            <p>
+                Documentação da Mozilla em <b>INGLÊS</b> <a href="https://developer.mozilla.org/en-US/" class="mdn" target="_blank">MDN</a>.
+            </p>
         </section>
         <section class="main-section" id="Reference">
             <div class="header">
@@ -806,6 +952,9 @@
                 </li>
                 <li>
                     Tabela de códigos especiais utilizadas no html para estruturar os códigos em tela retiradas de <a href="https://www.dm.ufscar.br/profs/waldeck/curso/html/apend/tabcod.html" class="mdn" target="_blank">UFSCar</a>.
+                </li>
+                <li>
+                    Informações sobre Tim Benners-Lee retiradas da sua página <a href="https://www.w3.org/People/Berners-Lee/Longer.html" class="mdn" target="_blank">Benners-Lee</a>.
                 </li>
             </ul>
         </section>
