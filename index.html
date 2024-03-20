@@ -12,7 +12,7 @@
 </head>
 <body>
     <nav id="navbar">
-        <header>Oficina HTML</header>
+        <header>HTML - CSS</header>
         <ul>
             <li>
                 <a class="nav-link" href="#добро_пожаловать">Boas vindas</a>
@@ -54,7 +54,10 @@
                 <a class="nav-link" href="#Forms">Tags de Formulário
             </li>
             <li>
-                <a class="nav-link" href="#Docs">Documentação
+                <a class="nav-link" href="#Docs">Documentação HTML
+            </li>
+            <li>
+                <a class="nav-link" href="#css">CSS
             </li>
             <li>
                 <a class="nav-link" href="#Reference">Referências</a>
@@ -924,7 +927,7 @@
         </section>
         <section class="main-section" id="Docs">
             <div class="header">
-                Documentação
+                Documentação HTML
             </div>
             <p>
                 Existem diversas outras tags, além das apresentadas no material. No entanto, não abordamos todas devido ao limite de tempo e à quantidade excessiva de informação que isso acarretaria. Por isso, vamos deixar a documentação da Mozilla para pesquisas sobre outras tags e para entender mais sobre as tags que foram apresentadas.
@@ -937,6 +940,331 @@
             </p>
             <p>
                 Documentação da Mozilla em <b>INGLÊS</b> <a href="https://developer.mozilla.org/en-US/" class="mdn" target="_blank">MDN</a>.
+            </p>
+        </section>
+        <section class="main-section" id="css">
+            <div class="header">
+                CSS
+            </div>
+            <p>
+                Três métodos de aplicação de CSS em um documento:
+            </p>
+            <ul>
+                <li>
+                    Folha de Estilos Externa
+                </li>
+                <li>
+                    Folha de Estilo Interna
+                </li>
+                <li>
+                    Estilos inline
+                </li>
+            </ul>
+            <p>
+                Utilizar o estilo inline, apenas se for estritamente necessário, pois é péssimo para manutenção.
+            </p>
+            <p>
+                <b>Seletor:</b> Um seletor é o modo pelo qual nós apontamos para alguma coisa no nosso documento HTML para aplicar os estilos à ele. Se o estilo não for aplicado, a probabilidade do seletor não estar vinculado é alta.
+            </p>
+            <p>
+                Cada regra no CSS começa com um seletor ou uma lista de seletores para informar ao navegador em qua lelemento ou elementos as regras devem ser aplicadas. Todos os exemplos a seguir são válidos como seletores ou lista de seletores.
+            </p>
+            <div class="code-container">
+                <code class="copyable-code">
+                    h1 <br>
+                    a:link <br>
+                    .container-principal <br>
+                    #img-background <br>
+                    * <br>
+                    .box p <br>
+                    .box p:first-child <br>
+                    h1, h2, .navegacao <br>
+                </code>
+                <button class="copy-button">
+                    <img src="img/icons8-copy-48.png" alt="Icone Copiar" class="button-icon">
+                    <span>Copiar Código</span>
+                </button>
+            </div>
+            <p>
+                A linguagem CSS possui regras para controlar qual regra vencerá em caso de colisão - elas são chamadas de cascata e especificidade. No bloco de código abaixo, definimos duas regras para o seletor p, mas o parágrafo acaba sendo colorido de azul. Isso ocorre porque a declaração que o define como azul aparece posteriormente na folha de estilo, e estilos mais recentes substituem os anteriores. Isso é a cascata em ação.
+            </p>
+            <div class="code-container">
+                <code class="copyable-code">
+                    &lt;p&gt; Um parágrafo aleatório &lt;&#47;p&gt;<br><br>
+                    &lt;style&gt; <br>
+                    p &#123; <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;color: red; <br>
+                    &#125;<br>
+                    <br>
+                    p &#123; <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;color: blue; <br>
+                    &#125;<br>
+                    &lt;&#47;style&gt;
+                </code>
+                <button class="copy-button">
+                    <img src="img/icons8-copy-48.png" alt="Icone Copiar" class="button-icon">
+                    <span>Copiar Código</span>
+                </button>
+            </div>
+            <p>
+                No entanto no próximo caso do bloco com o seletor de classe e o seletor de elemento, a classe vencerá, tornando o parágrafo vermelho - mesmo que apareça anteriormente na folha de estilo. Uma classe é descrita como sendo mais específica, ou tendo mais especificidade do que o seletor de elemento, então ela vence.
+            </p>
+            <div class="code-container">
+                <code class="copyable-code">
+                    &lt;p class="paragrafo"&gt; Um parágrafo aleatório &lt;&#47;p&gt;<br><br>
+                    &lt;style&gt; <br>
+                    .paragrafo &#123; <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;color: red; <br>
+                    &#125;<br>
+                    <br>
+                    p &#123; <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;color: blue; <br>
+                    &#125;<br>
+                    &lt;&#47;style&gt;
+                </code>
+                <button class="copy-button">
+                    <img src="img/icons8-copy-48.png" alt="Icone Copiar" class="button-icon">
+                    <span>Copiar Código</span>
+                </button>
+            </div>
+            <p>
+                <b>CSS consiste em dois blocos de contrução:</b>
+            </p>
+            <ul>
+                <li>
+                    <b>Propriedades:</b> Identificadores legíveis para humanos que indicam quais características estilísticas você deseja alterar.
+                </li>
+                <li>
+                    <b>Valores:</b> Cada propriedade especificada recebe um valor, que indica como você deseja alterar essas características estilísticas.
+                </li>
+            </ul>
+            <div class="table">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Uma única propriedade com seu valor</td>
+                            <td><img src="/img/image.png" alt="propriedade e valor"></td>
+                        </tr>
+                        <tr>
+                            <td>Uma declaração CSS</td>
+                            <td><img src="/img/image1.png" alt="declaração CSS"></td>
+                        </tr>
+                        <tr>
+                            <td>Uma regra CSS</td>
+                            <td><img src="/img/image2.png" alt="regra CSS"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p>
+                <b>@rules</b>
+            </p>
+            <p>
+                Até agora, não encontramos as regras, em inglês @rules (pronuncia-se "at-rules") do CSS. Estas são regras especiais que dão ao CSS algumas instruções sobre como se comportar. Algumas @rules são simples, com o nome da regra e um valor. Por exemplo, para importar uma folha de estilo adicional na sua folha de estilo CSS principal, você pode usar @import:
+            </p>
+            <div class="code-container">
+                <code class="copyable-code">
+                    @import "styles2.css";
+                </code>
+                <button class="copy-button">
+                    <img src="img/icons8-copy-48.png" alt="Icone Copiar" class="button-icon">
+                    <span>Copiar Código</span>
+                </button>
+            </div>
+            <p>
+                Uma das @rules mais comuns que você encontrará é a @media, que permite usar media queries para aplicar CSS somente quando certas condições são verdadeiras (por exemplo, quando a resolução da tela está acima de um certo valor ou a tela é mais larga que uma largura específica).
+            </p>
+            <p>
+                <b>Propriedades</b>
+            </p>
+            <div class="table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th scope="col" class="table-len-prop">Propriedades</th>
+                            <th scope="col">Descrição</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>font-family</td>
+                            <td>Define a família da fonte utilizada</td>
+                        </tr>
+                        <tr>
+                            <td>font-style</td>
+                            <td>Define a propriedades de estilos que podem ser: normal, italic ou oblique</td>
+                        </tr>
+                        <tr>
+                            <td>font-weight</td>
+                            <td>Define a propriedade de intensidade de uma fonte na sequência de valores de ‘100’ a ‘900’, cada número indica uma fonte mais intensa (escura) que o valor anterior</td>
+                        </tr>
+                        <tr>
+                            <td>font-size</td>
+                            <td>Define o tamanho da fonte</td>
+                        </tr>
+                        <tr>
+                            <td>letter-spacing</td>
+                            <td>Controla o espaçamento entre as letras de um texto</td>
+                        </tr>
+                        <tr>
+                            <td>word-spacing</td>
+                            <td>Controla o espaçamento entre as palavras de um texto</td>
+                        </tr>
+                        <tr>
+                            <td>line-height</td>
+                            <td>Controla a altura entre as linhas do texto de um paragrafo</td>
+                        </tr>
+                        <tr>
+                            <td>text-align</td>
+                            <td>Controla o posicionamento horizontal do conteúdo de um elemento. Os valores possíveis são: left, right, center e justify</td>
+                        </tr>
+                        <tr>
+                            <td>text-decoration</td>
+                            <td>Define um efeito decorativo no texto. Podendo entre eles ser: none (sem decoração); underline (sublinhado); line-through(linha cortando o texto); e blink (efeito piscante)</td>
+                        </tr>
+                        <tr>
+                            <td>text-transform</td>
+                            <td>
+                                Controla os efeitos de capitalização do texto. Com ela, podemos definir a caixa das letras (minúsculas e maiusculas) <br>
+                                <ul class="types">
+                                    <li>
+                                        capitalize – transforma o primeiro caracter de cada palavra em maiúscula
+                                    </li>
+                                    <li>
+                                        uppercase – transforma todas as letras de todas as palavras em maiúsculas
+                                    </li>
+                                    <li>
+                                        lowercase – transforma todas as letras de todas as palavras em minúsculas
+                                    </li>
+                                    <li>
+                                        none – cancela algum valor que tenha sido herdado
+                                    </li>
+                                </ul>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>text-indent</td>
+                            <td>Define o tamanho da endentação para a primeira linha do texto contida em um bloco, ou seja, o deslocamento para a direita de um paragrafo</td>
+                        </tr>
+                        <tr>
+                            <td>color</td>
+                            <td>Define a cor do texto de um texto</td>
+                        </tr>
+                        <tr>
+                            <td>width</td>
+                            <td>Define o comprimento (largura) de um elemento</td>
+                        </tr>
+                        <tr>
+                            <td>height</td>
+                            <td>Define a altura de um elemento</td>
+                        </tr>
+                        <tr>
+                            <td>border</td>
+                            <td>Define bordas para um elemento</td>
+                        </tr>
+                        <tr>
+                            <td>background</td>
+                            <td>Define as propriedades relacionadas ao fundo de exibição</td>
+                        </tr>
+                        <tr>
+                            <td>margin</td>
+                            <td>Controla as margens de um elementos</td>
+                        </tr>
+                        <tr>
+                            <td>padding</td>
+                            <td>Controla os espaçamentos de um elementos.</td>
+                        </tr>
+                        <tr>
+                            <td>display</td>
+                            <td>Controla como um elemento é exibido em um layout</td>
+                        </tr>
+                        <tr>
+                            <td>border-radius</td>
+                            <td>Define o raio dos cantos de um elemento com borda</td>
+                        </tr>
+                        <tr>
+                            <td>box-shadow</td>
+                            <td>Adiciona uma sombra ao redor de um elemento</td>
+                        </tr>
+                        <tr>
+                            <td>opacity</td>
+                            <td>Define a transparência de um elemento.</td>
+                        </tr>
+                        <tr>
+                            <td>position</td>
+                            <td>Define o método de posicionamento de um elemento em relação ao seu contêiner.</td>
+                        </tr>
+                        <tr>
+                            <td>z-index</td>
+                            <td>Controla a pilha de ordem de posicionamento de um elemento em relação a outros elementos.</td>
+                        </tr>
+                        <tr>
+                            <td>text-decoration</td>
+                            <td>Define a decoração do texto, como sublinhado, linha através do texto, etc.</td>
+                        </tr>
+                        <tr>
+                            <td>overflow</td>
+                            <td>Controla o comportamento do conteúdo quando ele transborda os limites do seu contêiner.</td>
+                        </tr>
+                        <tr>
+                            <td>transform</td>
+                            <td>Aplica transformações (rotação, escala, inclinação, etc.) a um elemento.</td>
+                        </tr>
+                        <tr>
+                            <td>cursor</td>
+                            <td>Define o tipo de cursor a ser exibido quando o mouse passa sobre um elemento.</td>
+                        </tr>
+                        <tr>
+                            <td>outline</td>
+                            <td>Define uma linha ao redor de um elemento, fora da borda.</td>
+                        </tr>
+                        <tr>
+                            <td>list-style</td>
+                            <td>Define o estilo de marcadores ou numeração de uma lista.</td>
+                        </tr>
+                        <tr>
+                            <td>transition</td>
+                            <td>Especifica as transições de propriedades CSS que devem ser animadas.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p>
+                <b>Media Queries</b>
+            </p>
+            <p>
+                Uma media query consiste de um media type e pelo menos uma expressão que limita o escopo das folhas de estilo usando media features, tal como largura, altura e cor. Media queries, adicionadas no CSS3, deixam a apresentação do conteúdo adaptado a uma gama especifica de dispositivos não precisando mudar o conteúdo em si.
+            </p>
+            <div class="code-container">
+                <code class="copyable-code">
+                    &#47;&#42; Esconde elementos quando a largura da tela é igual ou inferior a 720 pixels &#42;&#47; <br><br>
+                    &#64;media &#40;max-width: 720px&#41; &#123;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;display&#58; none&#59;<br>
+                    &#125;<br>
+                </code>
+                <button class="copy-button">
+                    <img src="img/icons8-copy-48.png" alt="Icone Copiar" class="button-icon">
+                    <span>Copiar Código</span>
+                </button>
+            </div>
+            <p>
+                <b>Flexbox:</b>
+            </p>
+            <p>
+                O Flexbox, ou Flexbox Layout, é um modelo de layout unidimensional em CSS que oferece uma maneira eficiente de organizar, alinhar e distribuir elementos dentro de um contêiner. Ele simplifica o design responsivo e a criação de layouts flexíveis, permitindo o alinhamento automático de itens em uma linha ou coluna, controle sobre a direção de empilhamento em telas menores e o ajuste dinâmico do espaço entre os elementos. Com suas propriedades flexíveis, como <b>justify-content</b>, <b>align-items</b> e <b>flex-grow</b>, o Flexbox oferece uma abordagem intuitiva e poderosa para criar layouts complexos com menos código e maior flexibilidade.
+            </p>
+            <p>
+                <b>Grid Layout:</b>
+            </p>
+            <p>
+                O Grid Layout é um modelo de layout bidimensional em CSS que permite a criação de layouts complexos e responsivos, definindo uma grade de linhas e colunas para posicionar os elementos de uma página da web. Ele oferece um controle preciso sobre a disposição e o espaçamento dos elementos, permitindo que os desenvolvedores criem designs visualmente ricos e adaptáveis. Com suas propriedades como <b>grid-template-columns</b>, <b>grid-template-rows</b> e <b>grid-gap</b>, o Grid Layout facilita a criação de designs flexíveis e alinhados, adequados para uma variedade de dispositivos e tamanhos de tela. Sua abordagem de grade facilita a criação de layouts complexos com menos esforço, tornando-o uma ferramenta valiosa para o desenvolvimento web moderno.
+            </p>
+            <p>
+                Treine <a href="https://codingfantasy.com/games/flexboxadventure" class="mdn" target="_blank">Flex Box</a> jogando.
+            </p>
+            <p>
+                Treine <a href="https://codingfantasy.com/games/css-grid-attack" class="mdn" target="_blank">Grid Layout</a> jogando.
             </p>
         </section>
         <section class="main-section" id="Reference">

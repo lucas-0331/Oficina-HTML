@@ -79,6 +79,10 @@ ul>li {
     font-size: 15px;
 }
 
+.types {
+    padding: 0 10px 0 30px;
+}
+
 code, table {
     margin: 20px;
     display: block;
@@ -94,8 +98,12 @@ code, table {
     align-items: center;
 }
 
+.table-len-prop {
+    min-width: 180px;
+}
+
 td {
-    padding: 8px 40px;
+    padding: 8px 20px;
     text-align: left;
     border-bottom: 1px solid #dddddd;
 }
